@@ -47,24 +47,21 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         if (index > 0)
                           const Divider(
-                            thickness: 2,
+                            thickness: 3,
+                            color: Colors.black26,
                           ),
-                        Padding(
-                          padding: const EdgeInsets.all(8),
-                          child: SizedBox(
-                            width: double.infinity,
-                            child: Card(
-                              color: const Color(0xff5d8ca3),
-                              elevation: 3,
-                              margin: const EdgeInsets.all(8),
+                        SizedBox(
+                          width: double.infinity,
+                          child: Card(
+                            color: const Color(0xff5d8ca3),
+                            elevation: 3,
+                            margin: const EdgeInsets.all(12),
+                            child: Padding(
+                              padding: const EdgeInsets.all(12),
                               child: Column(
                                 children: [
-                                  Text(snapshot.data![index].name!,
+                                  Text('${snapshot.data![index].name!} ${snapshot.data![index].lastName!}',
                                       style: const TextStyle(fontSize: 18)),
-                                  Text(
-                                    snapshot.data![index].lastName!,
-                                    style: const TextStyle(fontSize: 18),
-                                  ),
                                   Text(
                                       'Idade: ${snapshot.data![index].age!.toString()}',
                                       style: const TextStyle(fontSize: 15)),
