@@ -1,0 +1,4 @@
+#Tue Aug 16 13:39:42 BRT 2022
+base.0=/Users/ericarodrigues/Projetos/raro-academy/users-list/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
